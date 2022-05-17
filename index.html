@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="icon" href="./images/iconBar.png">
+    <title>QG Bar - Drinks tematicos</title>
+</head>
+<body>
+    <header class="topo">
+        <main class="menu-topo">
+            <a href="index.html" class="logo-topo">
+                <img src="./images/iconBar.png" alt="logo" />
+                <h2>QG - Bar</h2>
+            </a>
+            <nav class="navbar">
+                <ul class="navbar-links">
+                    <li>
+                        <a href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/quemsomos.html">
+                            Quem Somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contatos.html">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </header>
+    <section>
+        <div class="container-slider">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="./images/banners/imagem1.jpeg" style="width:100%; height: 90vh;">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./images/banners/imagem2.jpeg" style="width:100%; height: 90vh;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dot-container" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+
+        <div class="container-info">
+            <main class="wrapper">
+                <h2 class="title-info">
+                    Ultimos lançamentos
+                    <hr class="bordar" />
+                </h2>
+                <br/>
+                <div class="container-card">
+                    <div class="card-item">
+                        <figure class="img-descrip">
+                            <img src="./images/Drinks/drink.png" />
+                        </figure>
+
+                        <div class="info-produto">
+                            <h3>Moe Flamejante</h3>
+                            <p>
+                                Um classico dos Simpsons 3 temporada ep: 10 acaba de chegar.
+                            </p>
+                        </div>
+                        <button class="btn btn-veja">Veja +</button>
+                    </div>
+                    <div class="card-item">
+                        <figure class="img-descrip">
+                            <img src="./images/Drinks/drink2.png" />
+                        </figure>
+
+                        <div class="info-produto">
+                            <h3>Hogwarts Magic</h3>
+                            <p>
+                                De qual casa seria seu drink ?, que tal descobrir.
+                            </p>
+                        </div>
+                        <button class="btn btn-veja">Veja +</button>
+                    </div>
+                    <div class="card-item">
+                        <figure class="img-descrip">
+                            <img src="./images/Drinks/drink3.png" />
+                        </figure>
+
+                        <div class="info-produto">
+                            <h3>PokeDrink's</h3>
+                            <p>
+                                Nunca foi tal fácil capturar um pokemon.
+                            </p>
+                        </div>
+                        <button class="btn btn-veja">Veja +</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer>
+        <div class="container-footer wrapper">
+
+        </div>
+    </footer>
+
+    <script src="./Js/Slider.js"></script>
+</body>
+</html>
