@@ -344,18 +344,35 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (min-width: 320px) and (max-width: 1080px) {
+@media (min-width: 250px) and (max-width: 1080px) {
     .container-card {
         grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
     }
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 250px) and (max-width: 620px) {
+    .topo {
+        height: 7rem;
+    }
+
+    .navbar {
+        margin-top: 12px;
+    }
+
     .container-card {
         padding: 0px;
     }
 
     .card-item {
         width: 250px;
+    }
+    
+    .menu-topo {
+        justify-content: center;
+        margin: 12px auto;
+    }
+
+    .navbar .navbar-links {
+        grid-gap: 10px;
     }
 }
