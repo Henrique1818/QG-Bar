@@ -109,10 +109,16 @@
     </section>
     <footer>
         <div class="container-footer wrapper">
-
+        &copy;Copyright <span class="anoAtual"></span> - QG Bar - Todos os direitos reservados QG Bar 
         </div>
     </footer>
 
     <script src="./Js/Slider.js"></script>
+    <script>
+        var ano = document.querySelector(".anoAtual");
+        var anoAtual = new Date().getFullYear();
+
+        ano.append(anoAtual)
+    </script>
 </body>
 </html>
