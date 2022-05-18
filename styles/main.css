@@ -104,7 +104,7 @@ a {
 
 footer {
     width: 100%;
-    height: 5rem;
+    height: 2rem;
     background-color: var(--cor-princial);
     padding: 12px 24px;
 }
@@ -346,10 +346,22 @@ body::-webkit-scrollbar-thumb {
 
 footer {
     color: var(--cor-branco);
+    position: relative;
+}
+
+footer .container-footer {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center;
+    font-size: .7rem;
 }
 
 .container-footer, .container-footer span {
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 @media (min-width: 250px) and (max-width: 1080px) {
