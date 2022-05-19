@@ -24,6 +24,10 @@ body {
     background-color: var(--cor-princial);
 }
 
+ul, li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -126,6 +130,26 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #555;
+}
+
+footer {
+    color: var(--cor-branco);
+    position: relative;
+}
+
+footer .container-footer {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.container-footer, .container-footer span {
+    font-size: .7rem;
 }
 
 .btn {
@@ -309,6 +333,95 @@ body::-webkit-scrollbar-thumb {
     bottom: 2%;
 }
 
+.container-cardapio {
+    margin-top: 38px;
+    margin-bottom: 42px;
+}
+
+.container-cardapio .title-info-cardipio {
+    color: var(--cor-branco);
+    font-size: 1.2em;
+    line-height: 1rem;
+}
+
+.bordar2 {
+    width: 100px;
+    height: 2px;
+    background-color: var(--cor-branco);
+    border: 0;
+    margin-top: 12px;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--cor-branco);
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.cardapio::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: var(--cor-branco);
+}
+
+.cardapio::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cardapio::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--cor-fundo);
+}
+
+.cardapio-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    grid-gap: 15px;
+    
+    padding: 8px 18px;
+    border-radius: 4px;
+    border-bottom: 1px solid #f1f1f1;
+    color: var(--cor-texto-titulo);
+    cursor: pointer;
+}
+
+.cardapio-item .img-cardapio img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.cardapio-item .info-cardapio h2 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+.cardapio-item .info-cardapio p {
+    font-size: .8rem;
+    margin-top: 4px;
+}
+
+.cardapio-item .info-cardapio p span {
+    display: inline-block;
+    font-size: .7rem;
+    margin-bottom: 3px;
+    max-width: 90%;
+    text-align: left;
+}
+
+.cardapio-item .info-cardapio p strong {
+    font-size: .7rem;
+}
+
 @keyframes fade {
     from {
         opacity: .4
@@ -342,26 +455,6 @@ body::-webkit-scrollbar-thumb {
         font-size: .9rem;
         margin: 0 auto;
     }
-}
-
-footer {
-    color: var(--cor-branco);
-    position: relative;
-}
-
-footer .container-footer {
-    margin: 0 auto;
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
-    text-align: center;
-    font-size: .7rem;
-}
-
-.container-footer, .container-footer span {
-    font-size: .7rem;
 }
 
 @media (min-width: 250px) and (max-width: 1080px) {
