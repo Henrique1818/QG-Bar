@@ -178,8 +178,9 @@ footer .container-footer {
     margin: auto;
 }
 
-.mySlides .fade img {
-    height: 200px;
+.mySlides.fade img {
+    height: 90vh;
+    max-height: 88vh;
 }
 
 .mySlides {
@@ -438,8 +439,17 @@ footer .container-footer {
     }
 
     .navbar .navbar-links li a {
-        font-size: .7rem;
+        font-size: .67rem;
         margin: 0 auto;
+    }
+
+    .container-slider {
+        height: 50vh;
+    }
+
+    .mySlides.fade img {
+        height: 50vh;
+        max-height: 50vh;
     }
 }
 
