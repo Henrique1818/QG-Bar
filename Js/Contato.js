@@ -70,6 +70,10 @@ document.getElementById('formularioContato').addEventListener('submit', function
     if (nome != "" || sobrenome != "" || telefone != "" || email != "")
     {
         mensagem.innerHTML = `<span style='font-size: .8rem; color: #badc58; font-weight: bold;'>Recebemos seu contato, muito obrigado!</span>`;
+        nome = "";
+        sobrenome = ""; 
+        telefone = "";
+        email = "";
     }
     else {
         mensagem.innerHTML = `<span style='color: red; font-size: .8rem;'>Por favor, preencher todos campos obrigatórios!</span>`;
