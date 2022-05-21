@@ -69,20 +69,22 @@
 
             <div class="campos">
                 <aside class="formulario-lateral">
-                    <form method="post" action="./contatos.html">
+                    <span id="mensagem" style="display: none;"></span>
+                    <form id="formularioContato" method="get" action="">
                         <p>
-                            <input type="text" maxlength="200" placeholder="Nome" name="nome" id="nome" required />
-                            <input type="text" maxlength="200" placeholder="Sobrenome" name="sobrenome" id="sobre" required />
+                            <input type="text" maxlength="200" onchange="VerificarCamposVazios('nome', 'btnEnviar', 'mensagem')" placeholder="Nome" name="nome" id="nome" required />
+                            <input type="text" maxlength="200" onchange="VerificarCamposVazios('sobrenome', 'btnEnviar', 'mensagem')" placeholder="Sobrenome" name="sobrenome" id="sobrenome" required />
                         </p>
                         <p>
-                            <input type="tel" maxlength="15" placeholder="(00) 0.0000-0000" name="telefone" id="telefone" required />
-                            <input type="email" maxlength="100" placeholder="@gmail.com" name="email" id="email" required />
+                            <input type="tel" maxlength="15" placeholder="(00) 0.0000-0000" name="telefone" id="telefone" onchange="VerificarTelefone('telefone', 'btnEnviar', 'mensagem')" required />
+                            <input type="email" maxlength="100" onchange="VerificarCamposVazios('email', 'btnEnviar', 'mensagem')" placeholder="@gmail.com" name="email" id="email" required />
                         </p>
                         <p>
                             <textarea cols="30" rows="10" maxlength="2000"></textarea>
                         </p>
                         <p>
-                            <button type="submit" class="btnEnviar">Enviar</button>
+                            <p id="mensagemDeEnvio"></p>
+                            <input type="submit" id="btnEnviar" class="btnEnviar" value="Enviar">
                         </p>
                     </form>
                 </aside>
@@ -115,5 +117,7 @@
         CPNJ: 59.066.368/0001-03, &nbsp;&nbsp;&nbsp; Tel: (11) 77107-3593, &nbsp;&nbsp;&nbsp; São Paulo/SP
         </div>
     </footer>
+
+    <script src="../Js/Contato.js"></script>
 </body>
 </html>

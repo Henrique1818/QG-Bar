@@ -5,6 +5,11 @@
     padding: 32px 0;
 }
 
+.conteudo-principal .title-info {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
 .container {
     padding-top: 30px;
 }
