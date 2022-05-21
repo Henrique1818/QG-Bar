@@ -62,18 +62,18 @@ function VerificarCamposVazios(campo, botao, mensagem) {
 
 document.getElementById('formularioContato').addEventListener('submit', function (e) {
     var mensagem = document.getElementById('mensagemDeEnvio');
-    var nome = document.getElementById('nome').value;
-    var sobrenome = document.getElementById('sobrenome').value;
-    var telefone = document.getElementById('telefone').value;
-    var email = document.getElementById('email').value;
+    var nome = document.getElementById('nome');
+    var sobrenome = document.getElementById('sobrenome');
+    var telefone = document.getElementById('telefone');
+    var email = document.getElementById('email');
 
-    if (nome != "" || sobrenome != "" || telefone != "" || email != "")
+    if (nome.value != "" || sobrenome.value != "" || telefone.value != "" || email.value != "")
     {
         mensagem.innerHTML = `<span style='font-size: .8rem; color: #badc58; font-weight: bold;'>Recebemos seu contato, muito obrigado!</span>`;
-        nome = "";
-        sobrenome = ""; 
-        telefone = "";
-        email = "";
+        nome.value = "";
+        sobrenome.value = ""; 
+        telefone.value = "";
+        email.value = "";
     }
     else {
         mensagem.innerHTML = `<span style='color: red; font-size: .8rem;'>Por favor, preencher todos campos obrigatórios!</span>`;
