@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    
+    <title>Contatos - QG Bar - Drinks tematicos</title>
+    <meta name="description" content="Bem vindo(a) ao QG Bar - Temos diversos drinks tematicos para galera geek." />
+    <link rel="canonical" href="https://qg-bar.vercel.app/" />
+    <meta property="og:title" content="QG Bar - Drinks tematicos" />
+    <meta property="og:description" content="Bem vindo(a) ao QG Bar - Temos diversos drinks tematicos para galera geek." />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://qg-bar.vercel.app/images/banners/imagem2.jpeg" />
+    <meta property="og:image:secure_url" content="https://qg-bar.vercel.app/images/banners/imagem2.jpeg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="420" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:url" content="https://qg-bar.vercel.app/" />
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://qg-bar.vercel.app/images/banners/imagem2.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="icon" href="../images/iconBar.png">
+</head>
+<body>
+    <header class="topo">
+        <main class="menu-topo">
+            <a href="../index.html" class="logo-topo">
+                <img src="../images/iconBar.png" alt="logo" />
+                <h2>QG - Bar</h2>
+            </a>
+            <nav class="navbar">
+                <ul class="navbar-links">
+                    <li>
+                        <a href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#cardapio">
+                            Cardápio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#quemsomos">
+                            Quem Somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contatos.html">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </header>
+    <main class="conteudo-principal">
+        <section class="wrapper container">
+            <h2 class="title-info">
+                Fale conosco
+                <hr class="bordar" />
+            </h2>
+            <br />
+
+            <div class="campos">
+                <aside class="formulario-lateral">
+                    <span id="mensagem" style="display: none;"></span>
+                    <form id="formularioContato" method="get" action="">
+                        <p>
+                            <input type="text" maxlength="200" onchange="VerificarCamposVazios('nome', 'btnEnviar', 'mensagem')" placeholder="Nome" name="nome" id="nome" required />
+                            <input type="text" maxlength="200" onchange="VerificarCamposVazios('sobrenome', 'btnEnviar', 'mensagem')" placeholder="Sobrenome" name="sobrenome" id="sobrenome" required />
+                        </p>
+                        <p>
+                            <input type="tel" maxlength="15" placeholder="(00) 0.0000-0000" name="telefone" id="telefone" onchange="VerificarTelefone('telefone', 'btnEnviar', 'mensagem')" required />
+                            <input type="email" maxlength="100" onchange="VerificarCamposVazios('email', 'btnEnviar', 'mensagem')" placeholder="@gmail.com" name="email" id="email" required />
+                        </p>
+                        <p>
+                            <textarea cols="30" rows="10" maxlength="2000"></textarea>
+                        </p>
+                        <p>
+                            <p id="mensagemDeEnvio"></p>
+                            <input type="submit" id="btnEnviar" class="btnEnviar" value="Enviar">
+                        </p>
+                    </form>
+                </aside>
+                <aside class="informacoes-uteis">
+                    <div class="itens">
+                        <p>
+                            <img src="../images/Icones/local.png" />
+                            Av. Paulista, n° 982
+                        </p>
+                        <p>
+                            <img src="../images/Icones/gmail.png" />
+                            contatos@qgbar.com.br
+                        </p>
+                        <p>
+                            <img src="../images/Icones/tel.png" />
+                            (11) 2077-0021
+                        </p>
+                    </div>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1563844847446!2d-46.657484985337454!3d-23.562826267530827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8dc125527%3A0x723ba07f4fe31aa3!2sUniversidade%20Cruzeiro%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1653018369526!5m2!1spt-BR!2sbr" width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer wrapper">
+        &copy; Copyright <span class="anoAtual"></span> - QG Bar - Todos os direitos reservados QG Bar
+        <br/>
+        CPNJ: 59.066.368/0001-03, &nbsp;&nbsp;&nbsp; Tel: (11) 77107-3593, &nbsp;&nbsp;&nbsp; São Paulo/SP
+        </div>
+    </footer>
+
+    <script src="../Js/Contato.js"></script>
+</body>
+</html>
